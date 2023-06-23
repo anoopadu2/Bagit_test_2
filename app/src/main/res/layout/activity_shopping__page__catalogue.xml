@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".Shopping_Page_Catalogue">
+
+    <RelativeLayout
+        android:id="@+id/toolBarRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_rect01"
+        android:padding="10dp">
+
+        <!--        <ImageButton-->
+        <!--            android:id="@+id/cartBtn"-->
+        <!--            android:layout_width="30dp"-->
+        <!--            android:layout_height="30dp"-->
+        <!--            android:layout_centerVertical="true"-->
+        <!--            android:src="@drawable/ic_cart_white"-->
+        <!--            android:layout_toStartOf="@id/editProfileBtn"-->
+        <!--            android:layout_toLeftOf="@id/editProfileBtn"-->
+        <!--            android:background="@null" />-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shap_rect03"
+
+            android:orientation="horizontal">
+
+            <SearchView
+                android:id="@+id/searchbar"
+                android:layout_width="22dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:queryHint="Search item" />
+
+            <TextView
+                android:id="@+id/t_welcome_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="Category"
+                android:textColor="@color/colorWhite" />
+
+            <ImageButton
+                android:id="@+id/t_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:src="@drawable/catalog_icon_mini_2" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/shopRL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolBarRL">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/itemRV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/row_product_buyer" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ordersRL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolBarRL"
+        android:visibility="gone">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/orderRv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:reverseLayout="true"
+            app:stackFromEnd="true"
+            tools:listitem="@layout/row_order_user" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

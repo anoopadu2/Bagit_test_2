@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bagit_test_2">
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="bagit_test_2"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Bagit_test_2.NoActionBar">
+        <activity android:name=".OtpActivity"></activity>
+
+        <activity android:name=".UserRoutingActivity" />
+        <activity android:name=".RetailerSignUpActivity" />
+        <activity android:name=".SellerSignUpActivity" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".Splash_Page">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Shopping_Page_Catalogue" />
+        <activity android:name=".Order_Request_Details_Page" />
+        <activity android:name=".Order_Requests_Page" />
+        <activity android:name=".Item_Details_Catalogue_Page" />
+        <activity android:name=".Catalogue_Page" />
+        <activity android:name=".Dashboard_Page_Wholeseller" />
+        <activity android:name=".Dashboard_Page_Retailer" />
+        <activity android:name=".Order_Detail_Page" />
+        <activity android:name=".Order_Summary_Page" />
+        <activity android:name=".Order_Summary" />
+        <activity android:name=".Orders_Page" />
+        <activity android:name=".Dashboard_Customer" />
+        <activity android:name=".Categories_Page" />
+        <activity android:name=".shopping_page" />
+        <activity android:name=".Cart_Page" />
+        <activity android:name=".Product_Details" />
+        <activity android:name=".account" />
+        <activity android:name=".MainActivity2" />
+    </application>
+
+</manifest>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:onClick="OC_Update_Status"
+    android:orientation="vertical"
+    tools:context=".Order_Request_Details_Page">
+
+    <RelativeLayout
+        android:id="@+id/RL1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_rect01"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+
+            android:text="Order Request Details"
+            android:textColor="@color/colorWhite"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorGreen"
+                android:text="Item details :"
+                android:textColor="@color/colorWhite"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/t_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="@color/colorBlack"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/t_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Price"
+                android:textColor="@color/colorBlack"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/t_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quantity"
+                android:textColor="@color/colorBlack"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/t_total_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Price"
+                android:textColor="@color/colorBlack"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#4CAF50"
+                android:text="Delivery details :"
+                android:textColor="@color/colorWhite"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/t_buyer_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Buyer Name"
+                android:textColor="@color/colorBlack"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/t_order_placed_on"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Order placed on"
+                android:textColor="@color/colorBlack"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/t_estimated_delivery_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Estimated delivery date"
+                android:textColor="@color/colorBlack"
+                android:textSize="24sp" />
+            <TextView
+                android:id="@+id/t_delivery_by"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Deliver by "
+                android:textColor="@color/colorBlack"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/t_payment_method"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Payment method : Cash on delivery"
+                android:textColor="@color/colorBlack"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/t_order_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Order Status"
+                android:textColor="@color/colorBlack"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorGreen"
+                android:hapticFeedbackEnabled="true"
+                android:text="Delivery Status:"
+                android:textColor="@color/colorWhite"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/i_order_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Order status"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorGray02" />
+
+            <Button
+                android:id="@+id/b_update_order_status"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="OC_Update_Status"
+                android:text="Update Order Status" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

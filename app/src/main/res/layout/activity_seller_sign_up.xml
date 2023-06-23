@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SellerSignUpActivity"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:backgroundTint="#ffff"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:id="@+id/RL1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/shape_rect01">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Register as wholesaler"
+                android:textColor="@color/colorWhite"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+        <EditText
+            android:id="@+id/NameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:ems="8"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:backgroundTint="@color/colorBlack"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack"
+            android:textColorHighlight="#FF5722"
+
+            android:textColorLink="#4CAF50"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/EmailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="8"
+            android:hint="Email"
+            android:backgroundTint="@color/colorBlack"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack"
+            android:inputType="textEmailAddress"
+            android:textAlignment="viewStart"
+            android:textColorHighlight="#FF5722"
+            android:textColorLink="#4CAF50"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/MobileNumberEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorBlack"
+            android:ems="8"
+            android:hint="Mobile Number"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack"
+            android:inputType="numberSigned"
+            android:textAlignment="viewStart"
+            android:textColorHighlight="#FF5722"
+            android:textColorLink="#4CAF50"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/PasswordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorBlack"
+            android:layout_marginTop="8dp"
+            android:ems="8"
+            android:hint="Password"
+            android:textColor="@color/colorBlack"
+            android:inputType="textPassword"
+            android:textColorHint="@color/colorBlack"
+            android:textAlignment="viewStart"
+            android:textColorHighlight="#FF5722"
+            android:textColorLink="#4CAF50"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/RetypePasswordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorBlack"
+            android:layout_marginTop="8dp"
+            android:ems="8"
+            android:hint="Retype Password"
+            android:textColor="@color/colorBlack"
+            android:inputType="textPassword"
+            android:textAlignment="viewStart"
+            android:textColorHint="@color/colorBlack"
+            android:textColorHighlight="#FF5722"
+            android:textColorLink="#4CAF50"
+            android:textSize="20sp" />
+
+
+        <EditText
+            android:id="@+id/shop_name_2"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:ems="10"
+            android:textColor="@color/colorBlack"
+            android:backgroundTint="@color/colorBlack"
+            android:textColorHint="@color/colorBlack"
+            android:hint="Shop name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/street"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:ems="10"
+            android:textColor="@color/colorBlack"
+            android:backgroundTint="@color/colorBlack"
+            android:textColorHint="@color/colorBlack"
+            android:hint="Street"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:ems="10"
+            android:textColorHint="@color/colorBlack"
+            android:textColor="@color/colorBlack"
+            android:backgroundTint="@color/colorBlack"
+            android:hint="Area"
+
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/City"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:backgroundTint="@color/colorBlack"
+            android:ems="10"
+            android:textColor="@color/colorBlack"
+            android:hint="City"
+            android:textColorHint="@color/colorBlack"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:textColorHint="@color/colorBlack"
+            android:textColor="@color/colorBlack"
+            android:ems="10"
+            android:backgroundTint="@color/colorBlack"
+            android:hint="State"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/pin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:ems="10"
+            android:textColorHint="@color/colorBlack"
+            android:backgroundTint="@color/colorBlack"
+            android:hint="Pincode"
+            android:textColor="@color/colorBlack"
+            android:inputType="textPersonName" />
+
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/gpsBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/lightgreen"
+
+            android:text="Get Location" />
+
+        <Button
+            android:id="@+id/SignUpButton"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="124dp"
+            android:layout_marginTop="12dp"
+            android:text="Register"
+            android:backgroundTint="@color/lightgreen"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

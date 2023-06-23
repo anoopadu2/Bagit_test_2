@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "853772521451",
+    "project_id": "bagitdb",
+    "storage_bucket": "bagitdb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:853772521451:android:4049c556579bb5d30993ae",
+        "android_client_info": {
+          "package_name": "com.example.Bagit_Test_1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "853772521451-pkl59mue4jr496191s8md7bamq4d3ud4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcf0HGTVuNhjDtyzESV0gkST2q_DHyqZw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "853772521451-pkl59mue4jr496191s8md7bamq4d3ud4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:853772521451:android:e4c0e5b2416dfe3c0993ae",
+        "android_client_info": {
+          "package_name": "com.example.bagit_test_2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "853772521451-pkl59mue4jr496191s8md7bamq4d3ud4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcf0HGTVuNhjDtyzESV0gkST2q_DHyqZw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "853772521451-pkl59mue4jr496191s8md7bamq4d3ud4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

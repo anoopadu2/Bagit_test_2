@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context=".Dashboard_Page_Wholeseller">
+
+
+    <RelativeLayout
+        android:id="@+id/toolBarRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_rect01"
+        android:padding="10dp">
+
+        <!--        <ImageButton-->
+        <!--            android:id="@+id/cartBtn"-->
+        <!--            android:layout_width="30dp"-->
+        <!--            android:layout_height="30dp"-->
+        <!--            android:layout_centerVertical="true"-->
+        <!--            android:src="@drawable/ic_cart_white"-->
+        <!--            android:layout_toStartOf="@id/editProfileBtn"-->
+        <!--            android:layout_toLeftOf="@id/editProfileBtn"-->
+        <!--            android:background="@null" />-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shap_rect03"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/t_welcome_name"
+                android:layout_width="313dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Hello User !"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorWhite" />
+
+            <ImageButton
+                android:id="@+id/logoutBtn"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:onClick="OC_logout"
+                android:src="@drawable/ic_logout_white" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/imageButton6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@color/colorWhite"
+                android:onClick="OC_my_account"
+                android:src="@drawable/account_icon_2"
+                android:textAlignment="textEnd"
+                tools:srcCompat="@drawable/account_icon_2" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="My Account"
+                android:textAlignment="center"
+                android:textColor="@color/colorBlack" />
+
+            <ImageButton
+                android:id="@+id/imageButton10"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:background="@color/colorWhite"
+
+                android:onClick="OC_my_order_requests"
+                app:srcCompat="@drawable/order_request_icon" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="My Order Requests"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+            <ImageButton
+                android:id="@+id/imageButton11"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:background="@color/colorWhite"
+
+                android:onClick="OC_my_catalogue"
+                app:srcCompat="@drawable/catalog_icon_2" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="My Catalogue"
+                android:textAlignment="center"
+                android:layout_marginBottom="50dp"
+                android:textColor="@color/black" />
+
+            <ImageButton
+                android:id="@+id/imageButton12"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:background="@color/colorWhite"
+
+                android:onClick="OC_edit_catlogue"
+                app:srcCompat="@drawable/edit_catalog_icon" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edit Catalogue"
+                android:textAlignment="center"
+                android:layout_marginBottom="50dp"
+                android:textColor="@color/black" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

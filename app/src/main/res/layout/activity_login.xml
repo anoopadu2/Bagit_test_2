@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".LoginActivity">
+
+    <RelativeLayout
+        android:id="@+id/RL1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/shape_rect01"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Login to continue"
+            android:textColor="@color/colorWhite"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="TODO"
+        app:srcCompat="@drawable/icon" />
+
+    <EditText
+        android:id="@+id/EmailLoginEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+
+        android:hint="Email"
+        android:textColor="@color/colorBlack"
+        android:backgroundTint="@color/colorBlack"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/colorBlack"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/PasswordLoginEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:textColor="@color/colorBlack"
+        android:backgroundTint="@color/colorBlack"
+        android:hint="Password"
+        android:inputType="textPassword"
+
+        android:textColorHint="@color/colorBlack" />
+
+    <Button
+        android:id="@+id/LoginButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/lightgreen"
+        android:fontFamily="sans-serif-black"
+        android:text="Sign In"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/forgotButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/lightgreen"
+        android:text="Forgot Password"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/RegisterButton"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/lightgreen"
+        android:fontFamily="sans-serif-black"
+        android:text="Register as User"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/RegisterWholeseller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/lightgreen"
+        android:text="Register as Wholesaler"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/RegisterRetailer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/lightgreen"
+        android:text="Register as Retailer"
+        android:textColor="@color/white" />
+
+</LinearLayout>
+

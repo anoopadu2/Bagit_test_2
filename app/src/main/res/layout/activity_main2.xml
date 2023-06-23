@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pgr"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:visibility="visible"
+    tools:context=".MainActivity2">
+
+    <EditText
+        android:id="@+id/t_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Id"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textColorHint="@color/colorBlack" />
+
+    <EditText
+        android:id="@+id/t_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Type"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textColorHint="@color/colorBlack" />
+
+    <Button
+        android:id="@+id/b_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="OC_Login"
+        android:text="Button"
+        android:textColorHint="@color/colorBlack" />
+
+    <ListView
+        android:id="@+id/ls"
+        android:layout_width="match_parent"
+        android:layout_height="158dp">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="OC_reload"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/b_show_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="OC_show_item_details"
+        android:text="Show Item" />
+
+    <TextView
+        android:id="@+id/TVI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Seller"
+        android:textColor="@color/colorBlack" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:background="@color/purple_200" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="OC_clear_spinner"
+        android:text="Clear" />
+
+</LinearLayout>
